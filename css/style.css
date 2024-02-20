@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DinMd";
+}
+body {
+  background: white;
+  overflow-x: hidden;
+  max-width: 430px;
+  margin: auto;
+}
+@font-face {
+  font-family: "Din";
+  src: url("../fonts/DINNextLTArabic-Regular-2.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DinMd";
+  src: url("../fonts/DINNextLTArabic-Medium-4.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DinBold";
+  src: url("../fonts/DINNextLTArabic-Bold-4.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+input::placeholder {
+  font-family: "Din";
+}
+:root {
+  --main_color: #2563eb;
+}
+h1 {
+  font-family: "DinBold";
+}
+.m60 {
+  margin-bottom: 60px;
+}
+p {
+  margin: 0;
+  font-family: "Din";
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(82deg, #1f2265, #0181c6);
+  border-radius: 30px;
+}
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.m80 {
+  margin-bottom: 80px;
+}
+.m100 {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+}
+
+/*start style*/
+/* head*/
+.head {
+  margin-bottom: 48px;
+}
+.head .part {
+  position: relative;
+  height: 430px;
+  width: 100%;
+}
+.head .part .imgHead {
+  object-fit: cover;
+  height: 100%;
+}
+.head .part .dec {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0px 22px;
+}
+
+.head .part h2 {
+  font-family: "DinMd";
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.head .part p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Din";
+  margin-bottom: 24px;
+  text-align: center;
+}
+.head .part a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 176px;
+  height: 42px;
+  border-radius: 4px;
+  padding: 10px;
+  background: rgba(98, 208, 182, 1);
+  color: white;
+  margin: auto;
+  font-family: "Din";
+}
+/* products*/
+.products {
+  padding: 48px 16px;
+}
+.products .headProducts {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  gap: 6px;
+}
+.products .headProducts h2 {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(51, 51, 51, 1);
+  font-family: "DinBold";
+}
+.products .headProducts h3 {
+  color: rgba(102, 102, 102, 1);
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Din";
+}
+.products .headProducts a {
+  min-width: 108px;
+  width: 108px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(98, 208, 182, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+}
+.products .headProducts a p {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(98, 208, 182, 1);
+  font-family: "DinMd";
+}
+.products .partProducts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  border-radius: 4px;
+}
+.products .partProducts .part {
+  position: relative;
+  width: 190px;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+.products .partProducts .part .imgProduct {
+  width: 100%;
+  height: 212px;
+  border-radius: 4px 4px 0px 0px;
+  margin-bottom: 16px;
+}
+.products .partProducts .part .info {
+  padding: 2px 8px;
+}
+.products .partProducts .part .info h2 {
+  color: rgba(98, 208, 182, 1);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  font-family: "DinMd";
+}
+.products .partProducts .part .info h3 {
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  font-family: "DinMd";
+}
+.products .partProducts .part .info h4 {
+  color: rgba(102, 102, 102, 1);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  font-family: "DinMd";
+}
+.products .partProducts .part .info .price {
+  display: flex;
+  align-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.products .partProducts .part .info .price p {
+}
+.products .partProducts .part .info .price p.now {
+  color: rgba(245, 81, 87, 1);
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "DinMd";
+}
+.products .partProducts .part .info .price p.sall {
+  color: rgba(165, 165, 165, 1);
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: line-through;
+  font-family: "Din";
+}
+.products .partProducts .part .info .endPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.products .partProducts .part .info .endPart .addTo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background-color: transparent;
+  border-radius: 4px;
+  height: 56px;
+  width: 116px;
+  color: rgba(51, 51, 51, 1);
+  border: none;
+  font-family: "DinMd";
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid rgba(238, 238, 238, 1);
+transition: 0.3s;
+}
+.products .partProducts .part .info .endPart .addTo:hover {
+  background: rgba(98, 208, 182, 1);
+  border: 1px solid rgba(98, 208, 182, 1);
+  color: white;
+}
+.products .partProducts .part .info .endPart .fav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 4px;
+  height: 56px;
+  width: 50px;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+.products .partProducts .part .satte {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 5px;
+  border-radius: 2px;
+  min-width: 56px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Din";
+}
+
+.products .partProducts .part .satte::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px;
+  border-style: solid;
+}
+.products .partProducts .part .satte.new {
+  background: rgba(98, 208, 182, 1);
+}
+.products .partProducts .part .satte.new::before {
+  border-color: transparent transparent transparent rgba(98, 208, 182, 1);
+}
+.products .partProducts .part .satte.sall {
+  background: rgba(245, 81, 87, 1);
+
+
+}
+.products .partProducts .part .satte.sall::before {
+  border-color: transparent transparent transparent rgba(245, 81, 87, 1);
+}
