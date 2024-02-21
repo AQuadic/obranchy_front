@@ -437,31 +437,31 @@ footer .parts .part .followLinks .follow:hover svg path {
 /*categories*/
 .categories {
 }
-.categories .mySwiper2{
+.categories .mySwiper2 {
   padding: 0px 16px;
 }
- .headCategories {
+.headCategories {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
   padding: 0px 16px;
 }
- .headCategories .part1 {
+.headCategories .part1 {
 }
- .headCategories .part1 h2 {
+.headCategories .part1 h2 {
   font-size: 20px;
   line-height: 28px;
   font-family: "DinBold";
   margin: 0;
 }
- .headCategories .part1 p {
+.headCategories .part1 p {
   font-size: 14px;
   line-height: 20px;
   color: rgba(102, 102, 102, 1);
   font-family: "Din";
 }
- .swip {
+.swip {
   position: relative;
   width: 90px;
   height: 40px;
@@ -500,12 +500,13 @@ footer .parts .part .followLinks .follow:hover svg path {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.btnSwiperNext:after, .swiper-rtl .btnSwiperPrev:after{
-  content: 'next';
-
+.btnSwiperNext:after,
+.swiper-rtl .btnSwiperPrev:after {
+  content: "next";
 }
-.btnSwiperPrev:after, .swiper-rtl .btnSwiperNext:after{
-  content: 'prev';
+.btnSwiperPrev:after,
+.swiper-rtl .btnSwiperNext:after {
+  content: "prev";
 }
 .categories .part {
 }
@@ -533,8 +534,600 @@ footer .parts .part .followLinks .follow:hover svg path {
   font-family: "Din";
 }
 /*comments*/
-.comments{}
-.comments .part{}
-.comments .part .headPart{}
-.comments .part h3{}
-.comments .part .person{}
+.comments {
+}
+.comments .mySwiper3 {
+  padding: 0px 16px;
+}
+.comments .part {
+  border: 1px solid rgba(238, 238, 238, 1);
+  padding: 24px;
+  width: 294px;
+  max-width: 100%;
+}
+.comments .part .headPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.comments .part .headPart .star {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.comments .part .headPart .star svg {
+}
+.comments .part .headPart .star svg path {
+}
+.comments .part .headPart .seme {
+}
+.comments .part .headPart .seme svg {
+}
+.comments .part h3 {
+  font-size: 16px;
+  color: rgba(102, 102, 102, 1);
+  margin-bottom: 16px;
+  line-height: 25px;
+  font-family: "Din";
+}
+.comments .part .person {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.comments .part .person .imgPerson {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  min-width: 48px;
+}
+.comments .part .person .info {
+}
+.comments .part .person .info h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 25px;
+  font-family: "DinMd";
+}
+.comments .part .person .info p {
+  font-size: 14px;
+  font-family: "Din";
+  line-height: 20px;
+
+  color: rgba(102, 102, 102, 1);
+}
+/*notFound*/
+.notFound {
+  padding: 32px 16px;
+}
+.notFound .imgNot {
+  width: 134px;
+  height: 134px;
+  object-fit: cover;
+  display: block;
+  margin: 0px auto 16px;
+}
+.notFound h2 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: "DinMd";
+}
+.notFound p {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  font-family: "Din";
+  color: rgba(165, 165, 165, 1);
+}
+.cart {
+  padding: 10px 16px;
+}
+.cart h2 {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 24px;
+  color: rgba(102, 102, 102, 1);
+  font-family: "Din";
+}
+.cart .cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cart .cartItems .item {
+  padding: 16px;
+  width: 100%;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+.cart .cartItems .item .part1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.cart .cartItems .item .part1 .imgItem {
+  width: 95px;
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+  min-width: 94px;
+}
+.cart .cartItems .item .part1 .info {
+  flex: 1;
+}
+.cart .cartItems .item .part1 .info h3 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "DinMd";
+}
+.cart .cartItems .item .part1 .info p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-family: "Din";
+  color: rgba(102, 102, 102, 1);
+}
+.cart .cartItems .item .part1 .delItem {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  background: rgba(248, 248, 248, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  border: none;
+}
+.cart .cartItems .item .part1 .delItem:hover {
+  background: rgb(255, 231, 231);
+}
+.cart .cartItems .item .part1 .delItem svg {
+  width: 8px;
+  height: 8px;
+}
+.cart .cartItems .item .part1 .delItem:hover path {
+  fill: rgb(243, 159, 159);
+}
+.cart .cartItems .item .line {
+  width: 92%;
+  height: 1px;
+  background: rgba(238, 238, 238, 1);
+  margin: 16px auto;
+  display: block;
+}
+.cart .cartItems .item .part2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cart .cartItems .item .part2 .counter {
+  height: 42px;
+  width: auto;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+.cart .cartItems .item .part2 .counter button {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-family: "Din";
+  color: rgba(102, 102, 102, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart .cartItems .item .part2 .counter button.dec {
+  padding-right: 4px;
+  border-right: 1px solid rgba(238, 238, 238, 1);
+}
+.cart .cartItems .item .part2 .counter button.inc {
+  padding-left: 4px;
+  border-left: 1px solid rgba(238, 238, 238, 1);
+}
+.cart .cartItems .item .part2 .counter p {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(102, 102, 102, 1);
+  font-family: "Din";
+  min-width: 46px;
+  text-align: center;
+  margin: auto;
+}
+.cart .cartItems .item .part2 .totalPrice {
+  display: flex;
+  gap: 2px;
+}
+.cart .cartItems .item .part2 .totalPrice span {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 1);
+  font-family: "DinMd";
+}
+.cart .cartItems .item .part2 .totalPrice h4 {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 1);
+  font-family: "DinMd";
+}
+/*summary*/
+.cart .summary {
+  padding: 16px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  width: 100%;
+  margin-top: 24px;
+}
+.cart .summary h3 {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 1);
+  font-family: "DinMd";
+  margin-bottom: 16px;
+}
+.cart .summary ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.cart .summary ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart .summary ul li h4 {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Din";
+  color: rgba(102, 102, 102, 1);
+  margin: 0;
+}
+.cart .summary ul li p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Din";
+  color: rgba(102, 102, 102, 1);
+  margin: 0;
+}
+.cart .summary .code {
+}
+.cart .summary .code h4 {
+  color: rgba(51, 51, 51, 1);
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: "Din";
+  line-height: 20px;
+}
+.cart .summary .code .formCode {
+  width: 100%;
+  height: 42px;
+  display: flex;
+}
+.cart .summary .code .formCode input {
+  padding: 10px 12px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(238, 238, 238, 1);
+  font-size: 14px;
+  font-family: "DinMD";
+  line-height: 20px;
+  border-left: none;
+  border-radius: 4px;
+}
+html[dir="ltr"] .cart .summary .code .formCode input {
+  border-right: none;
+  border-left: 1px solid rgba(238, 238, 238, 1);
+}
+.cart .summary .code .formCode input::placeholder {
+  font-size: 14px;
+  font-family: "DinMD";
+  line-height: 20px;
+  color: rgba(165, 165, 165, 1);
+}
+.cart .summary .line {
+  display: block;
+  height: 1px;
+  width: 92%;
+  margin: 16px auto;
+  background-color: rgba(238, 238, 238, 1);
+}
+.cart .summary .code .formCode .addCode {
+  width: 64px;
+  min-width: 64px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(98, 208, 182, 1);
+  color: rgba(98, 208, 182, 1);
+  background-color: transparent;
+  border-radius: 4px;
+}
+.cart .summary .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.cart .summary .total h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "DinMD";
+  color: rgba(51, 51, 51, 1);
+  margin: 0;
+}
+.cart .summary .total p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "DinMD";
+  color: rgba(51, 51, 51, 1);
+}
+.cart .summary .tax {
+  color: #a5a5a5;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.cart .summary .tax span {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(245, 81, 87, 1);
+}
+.cart .summary .btnDone {
+  width: 100%;
+  height: 56px;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  background: rgba(98, 208, 182, 1);
+  font-family: "DinMD";
+  border: none;
+  border-radius: 4px;
+}
+/**/
+.pathPage {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+.pathPage a {
+  color: rgba(98, 208, 182, 1);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  font-family: "Din";
+}
+.pathPage span {
+  color: rgba(98, 208, 182, 1);
+  font-size: 16px;
+  font-family: "Din";
+  line-height: 24px;
+}
+.pathPage p {
+  color: rgba(102, 102, 102, 1);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  font-family: "Din";
+}
+/*details*/
+.details {
+  padding: 8px 16px;
+}
+.details .item {
+}
+.details .item .boxImgItem {
+  width: 100%;
+  height: 396px;
+  border-radius: 4px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.details .item .imgItem {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.details .item .imagesItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: scroll;
+  margin-bottom: 32px;
+}
+.details .item .imagesItem::-webkit-scrollbar {
+  display: none;
+}
+.details .item .imagesItem .imgOne {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  background-color: transparent;
+  opacity: 0.4;
+  min-width: 80px;
+}
+.details .item .imagesItem .imgOne.active {
+  border: 1px solid rgba(98, 208, 182, 1);
+  opacity: 1;
+}
+.details .item .imagesItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.details .item h2 {
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "DinMd";
+  margin-bottom: 16px;
+}
+.details .item .countPay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.details .item .countPay svg {
+}
+.details .item .countPay p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+  font-family: "Din";
+}
+.details .item .countPay p span {
+  font-family: "Din";
+  color: rgba(98, 208, 182, 1);
+}
+.details .item .shareItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.details .item .shareItem svg {
+}
+.details .item .shareItem p {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(102, 102, 102, 1);
+  font-family: "Din";
+}
+.details .item h3 {
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(102, 102, 102, 1);
+  font-family: "Din";
+  margin-bottom: 8px;
+}
+.details .item .more {
+  color: rgba(98, 208, 182, 1);
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Din";
+  margin-bottom: 24px;
+}
+.details .item .countItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.details .item .countItem h4 {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 1);
+  font-family: "DinMd";
+}
+.details .item .countItem h5 {
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(51, 51, 51, 1);
+  font-family: "DinBold";
+}
+.details .item .countItem .counter {
+  height: 50px;
+  width: 180px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  display: flex;
+  align-items: center;
+  
+}
+.details .item .countItem .counter .amount{
+  flex: 1;
+  text-align: center;
+  border-inline: 1px solid rgba(238, 238, 238, 1);
+}
+.details .item .countItem .counter button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 56px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+}
+.details .item .payNow {
+  background: rgba(98, 208, 182, 1);
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  height: 56px;
+  color: white;
+  font-size: 16px;
+  font-family: "DinMd";
+  margin-bottom: 16px;
+}
+.details .item .addTo {
+  background-color: transparent;
+  border: 1px solid rgba(98, 208, 182, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 56px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.details .item .addTo svg {
+}
+.details .item .addTo p {
+  font-size: 16px;
+  font-family: "DinMd";
+  color: rgba(98, 208, 182, 1);
+}
+/*payType*/
+.payType {
+  padding: 0px 16px;
+margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.payType .part {
+  border: 1px solid rgba(238, 238, 238, 1);
+  padding: 16px;
+  border-radius: 4px;
+}
+.payType .part img {
+  width: 86px;
+  height: auto;
+  margin-bottom: 16px;
+}
+.payType .part h3 {
+  color: rgba(51, 51, 51, 1);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  font-family: "Din";
+}
+.payType .part a {
+  color: rgba(98, 208, 182, 1);
+  font-family: "Din";
+
+  font-size: 14px;
+  line-height: 20px;
+}
