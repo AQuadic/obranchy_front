@@ -130,6 +130,24 @@ html::-webkit-scrollbar-track {
   margin: auto;
   font-family: "Din";
 }
+.head .swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: 1px solid white;
+  opacity: 1;
+  transition: 0.3s;
+}
+.head .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: rgba(98, 208, 182, 1);
+  border-radius: 10px;
+  width: 36px;
+  border: 1px solid rgba(98, 208, 182, 1);
+}
+.head .swiper-pagination {
+  bottom: var(--swiper-pagination-bottom, 18px);
+}
 /* products*/
 .products {
   padding: 48px 16px;
@@ -246,7 +264,7 @@ html::-webkit-scrollbar-track {
   display: flex;
   align-items: center;
   justify-content: center;
- background-color: transparent;
+  background-color: transparent;
   border-radius: 4px;
   height: 56px;
   width: 116px;
@@ -256,7 +274,7 @@ html::-webkit-scrollbar-track {
   font-size: 16px;
   line-height: 24px;
   border: 1px solid rgba(238, 238, 238, 1);
-transition: 0.3s;
+  transition: 0.3s;
 }
 .products .partProducts .part .info .endPart .addTo:hover {
   background: rgba(98, 208, 182, 1);
@@ -311,9 +329,212 @@ transition: 0.3s;
 }
 .products .partProducts .part .satte.sall {
   background: rgba(245, 81, 87, 1);
-
-
 }
 .products .partProducts .part .satte.sall::before {
   border-color: transparent transparent transparent rgba(245, 81, 87, 1);
 }
+/*footer*/
+footer {
+  padding: 32px 16px;
+}
+
+footer .parts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+footer .parts .part {
+}
+footer .parts .part .headFooter {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 16px;
+  font-family: "DinMd";
+}
+footer .parts .part .p_footer {
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(102, 102, 102, 1);
+  font-family: "Din";
+}
+footer .parts .part ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .parts .part ul li {
+}
+footer .parts .part ul li .LinkFooter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  transition: 0.3s;
+}
+footer .parts .part.contact ul li .LinkFooter {
+  align-items: flex-start;
+}
+footer .parts .part ul li .LinkFooter:hover {
+  padding: 0px 8px;
+}
+footer .parts .part ul li .LinkFooter:hover svg path {
+  fill: rgba(98, 208, 182, 1);
+}
+
+footer .parts .part ul li .LinkFooter:hover .p_footer,
+footer .parts .part ul li .LinkFooter:hover span {
+  color: rgba(98, 208, 182, 1);
+}
+footer .parts .part ul li .LinkFooter:hover {
+}
+footer .parts .part ul li .LinkFooter svg {
+  transition: 0.3s;
+}
+footer .parts .part ul li .LinkFooter .p_footer {
+  margin-bottom: 4px;
+  transition: 0.3s;
+}
+footer .parts .part.contact ul li .LinkFooter svg {
+  margin-top: 12px;
+}
+footer .parts .part ul li .LinkFooter span {
+  display: block;
+  font-size: 16px;
+  line-height: 25px;
+  color: #a5a5a5;
+  font-family: "Din";
+
+  transition: 0.3s;
+}
+footer .parts .part .followLinks {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer .parts .part .followLinks .follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(238, 238, 238, 1);
+  transition: 0.3s;
+}
+footer .parts .part .followLinks .follow:hover {
+  border: 0.5px solid rgba(98, 208, 182, 1);
+}
+footer .parts .part .followLinks .follow svg {
+  transition: 0.3s;
+}
+footer .parts .part .followLinks .follow svg path {
+  transition: 0.3s;
+}
+footer .parts .part .followLinks .follow:hover svg path {
+  fill: rgba(98, 208, 182, 1);
+}
+/*categories*/
+.categories {
+}
+.categories .mySwiper2{
+  padding: 0px 16px;
+}
+ .headCategories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 0px 16px;
+}
+ .headCategories .part1 {
+}
+ .headCategories .part1 h2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "DinBold";
+  margin: 0;
+}
+ .headCategories .part1 p {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(102, 102, 102, 1);
+  font-family: "Din";
+}
+ .swip {
+  position: relative;
+  width: 90px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 90px;
+}
+
+.swip .btnSwiperNext,
+.swip .btnSwiperPrev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0.87px solid rgba(238, 238, 238, 1) !important;
+  margin: 0;
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  opacity: 1;
+  transition: 0.3s;
+}
+.swip .btnSwiperNext:hover,
+.swip .btnSwiperPrev:hover {
+  background: #cfcfcf99;
+}
+.swip .btnSwiperNext:after,
+.swip .btnSwiperPrev:after {
+  color: rgba(102, 102, 102, 1);
+  font-weight: 800;
+  font-size: 12px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.btnSwiperNext:after, .swiper-rtl .btnSwiperPrev:after{
+  content: 'next';
+
+}
+.btnSwiperPrev:after, .swiper-rtl .btnSwiperNext:after{
+  content: 'prev';
+}
+.categories .part {
+}
+.categories .part .imgItem {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin: 0px auto 16px;
+  border-radius: 50%;
+}
+.categories .part h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  font-family: "DinMd";
+
+  text-align: center;
+}
+.categories .part p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(102, 102, 102, 1);
+  font-family: "Din";
+}
+/*comments*/
+.comments{}
+.comments .part{}
+.comments .part .headPart{}
+.comments .part h3{}
+.comments .part .person{}
