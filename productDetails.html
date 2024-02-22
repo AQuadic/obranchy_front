@@ -33,29 +33,34 @@
       </div>
       <div class="item">
         <div class="boxImgItem">
-          <img src="./images/itemImg.png" alt="" class="imgItem" />
+          <img
+            id="img_show"
+            src="./images/itemImg.png"
+            alt=""
+            class="imgItem"
+          />
         </div>
         <div class="imagesItem">
           <div class="imgOne">
-            <img src="./images/itemImg.png" alt="" />
+            <img src="./images/cate1.png" class="def_img " alt="" />
           </div>
-          <div class="imgOne active">
-            <img src="./images/itemImg.png" alt="" />
-          </div>
-          <div class="imgOne">
-            <img src="./images/itemImg.png" alt="" />
+          <div class="imgOne =">
+            <img src="./images/itemImg.png" class="def_img active" alt="" />
           </div>
           <div class="imgOne">
-            <img src="./images/itemImg.png" alt="" />
+            <img src="./images/itemImg.png" class="def_img" alt="" />
           </div>
           <div class="imgOne">
-            <img src="./images/itemImg.png" alt="" />
+            <img src="./images/itemImg.png" class="def_img" alt="" />
           </div>
           <div class="imgOne">
-            <img src="./images/itemImg.png" alt="" />
+            <img src="./images/itemImg.png" class="def_img" alt="" />
           </div>
           <div class="imgOne">
-            <img src="./images/itemImg.png" alt="" />
+            <img src="./images/itemImg.png" class="def_img" alt="" />
+          </div>
+          <div class="imgOne">
+            <img src="./images/itemImg.png" class="def_img" alt="" />
           </div>
         </div>
         <h2>موبايل آبل آيفون بشريحتين و 64 جيجا بالإضافة الى كاميرتين</h2>
@@ -100,8 +105,8 @@
           <h4>حدد الكمية</h4>
           <div class="counter hide">
             <button class="inc" name="add">+</button>
-            
-            <p class="amount"  name="num-tv">1</p>
+
+            <p class="amount" name="num-tv">1</p>
             <button class="dec" name="del">-</button>
           </div>
           <h5>250.00 ر.س</h5>
@@ -134,20 +139,22 @@
       </div>
     </section>
     <section class="payType">
-        <div class="part">
-            <img src="./images/tmara.png" alt="tmara" />
-           <h3>ادفع 586 ر.س فقط علي 3 دفعات بدون رسوم</h3>
-            <a href="">أعرف أكثر</a>
-          </div>
+      <div class="part">
+        <img src="./images/tmara.png" alt="tmara" />
+        <h3>ادفع 586 ر.س فقط علي 3 دفعات بدون رسوم</h3>
+        <a href="">أعرف أكثر</a>
+      </div>
       <div class="part">
         <img src="./images/Payemnt Icons.png" alt="Payemnt" />
         <h3>سنقسط الدفع لمشترياتك علي أربع أقساط بدون تكلفة</h3>
         <a href="">أعرف أكثر</a>
       </div>
-    
+
       <div class="part">
         <img src="./images/download.png" alt="Payemnt" />
-       <h3>اليوم والباقي SAR ادفع ربع القيمة 11.77 .قسطه على 3 أشهر. بدون رسوم</h3>
+        <h3>
+          اليوم والباقي SAR ادفع ربع القيمة 11.77 .قسطه على 3 أشهر. بدون رسوم
+        </h3>
         <a href="">أعرف أكثر</a>
       </div>
     </section>
@@ -179,6 +186,24 @@
           counter();
         });
       });
+    </script>
+    <script>
+      const img_show = document.getElementById("img_show");
+      const def_img = document.getElementsByClassName("def_img");
+      const ahmed = function () {
+        // Remove "active" class from all elements with class "def_img"
+        for (let i = 0; i < def_img.length; i++) {
+          def_img[i].classList.remove("active");
+        }
+        // Add "active" class to the clicked element
+        this.classList.add("active");
+        // Set src and srcset of img_show
+        img_show.src = this.src;
+        img_show.srcset = this.srcset;
+      };
+      for (let i = 0; i < def_img.length; i++) {
+        def_img[i].addEventListener("click", ahmed);
+      }
     </script>
   </body>
 </html>
