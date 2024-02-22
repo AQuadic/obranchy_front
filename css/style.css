@@ -1231,6 +1231,22 @@ color: white;
   align-items: center;
   
 }
+.navbar .part2 .shpo{
+  position: relative;
+}
+.navbar .part2 .shpo p{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: white;
+  background: rgba(245, 81, 87, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+
+}
+.navbar .part2 .shpo svg{}
 .navbar .part2 .shopPrice{}
 .navbar .part2 .shopPrice h3{
   color: rgba(165, 165, 165, 1);
