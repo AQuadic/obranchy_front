@@ -1183,9 +1183,7 @@ color: white;
   color: white;
 }
 /*navbar*/
-.navbar-dark .navbar-brand{
-  color: black;
-}
+
 .navbar {
 
   height: 78px;
@@ -1198,4 +1196,28 @@ color: white;
   padding: 0;
   border: 0;
   box-shadow: none;
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(51, 51, 51, 1);
+}
+.navbar-brand p{
+  font-size: 16px;
+  line-height: 20px;
+  width: 40px;
+  font-family: "DinBold";
+  text-wrap: wrap;
+  color: rgba(51, 51, 51, 1);
+
+}
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus{
+  color: rgba(51, 51, 51, 1);
+
+}
+.navbar .part1{
+  display: flex;
+  align-items: center;
+  gap: 0px;
 }
