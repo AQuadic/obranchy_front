@@ -1189,6 +1189,9 @@ color: white;
   height: 78px;
 }
 .navbar-dark .navbar-toggler-icon{
+  height: 26px;
+    width: 26px;
+    margin-bottom: 4px;
   background-image: url('../images/Menu.svg');
 }
 .navbar-dark .navbar-toggler {
