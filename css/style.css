@@ -83,6 +83,7 @@ html::-webkit-scrollbar-track {
 /* head*/
 .head {
   margin-bottom: 48px;
+  direction: rtl;
 }
 .head .part {
   position: relative;
@@ -183,6 +184,9 @@ html::-webkit-scrollbar-track {
   justify-content: center;
   gap: 12px;
   padding: 10px;
+}
+html[dir=ltr] .products .headProducts a svg{
+  transform: rotateY(180deg);
 }
 .products .headProducts a p {
   font-size: 14px;
@@ -439,6 +443,7 @@ footer .parts .part .followLinks .follow:hover svg path {
 }
 .categories .mySwiper2 {
   padding: 0px 16px;
+  direction: rtl;
 }
 .headCategories {
   display: flex;
@@ -470,6 +475,7 @@ footer .parts .part .followLinks .follow:hover svg path {
   justify-content: center;
   gap: 10px;
   min-width: 90px;
+  direction: rtl;
 }
 
 .swip .btnSwiperNext,
@@ -538,6 +544,7 @@ footer .parts .part .followLinks .follow:hover svg path {
 }
 .comments .mySwiper3 {
   padding: 0px 16px;
+  direction: rtl;
 }
 .comments .part {
   border: 1px solid rgba(238, 238, 238, 1);
@@ -1306,6 +1313,11 @@ html[dir="ltr"] .cart .summary .code .formCode input {
   align-items: center;
   justify-content: center;
 }
+html[dir=ltr] .offcanvas-header .btn-close.closeNav{
+  left: auto;
+  right: -30px;
+  transform: rotateY(180deg);
+}
 .navbar-nav .nav-link {
   color: rgba(51, 51, 51, 1);
   font-size: 14px;
@@ -1336,6 +1348,10 @@ html[dir="ltr"] .cart .summary .code .formCode input {
 .navbar .accordion-button::after {
   margin-right: auto;
   margin-left: 0;
+}
+html[dir=ltr] .navbar .accordion-button::after{
+  margin-right: 0;
+  margin-left: auto;
 }
 .accordion-button:not(.collapsed) {
   color: rgba(98, 208, 182, 1);
