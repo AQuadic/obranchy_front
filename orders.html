@@ -130,16 +130,15 @@
           aria-labelledby="offcanvasBottomLabel"
         >
           <div class="offcanvas-header">
-            <a href="profile.html" class="user">
+            <div class="user">
               <div class="imgUser notfication">
-                <img src="./images/user.png"  alt="user" />
-
+                <img src="./images/user.png" alt="user" />
               </div>
               <div class="infoUser">
                 <h3>مرحبآ بك</h3>
                 <h4>محمد عبدالجليل</h4>
               </div>
-            </a>
+            </div>
             <button
               type="button"
               class="btn-close text-reset"
@@ -434,46 +433,78 @@
               </div>
             </div>
 
-           <div class="country" style="display: none;">
-            <img src="./images/sud.png" alt="">
-            <h3>العربية</h3>
-            <span></span>
-            <p>ج.م</p>
-           </div>
+            <div class="country" style="display: none">
+              <img src="./images/sud.png" alt="" />
+              <h3>العربية</h3>
+              <span></span>
+              <p>ج.م</p>
+            </div>
           </div>
         </div>
       </div>
     </nav>
-    <section class="account container">
-     
-      <div class="address emptyorder hide">
-       <img src="./images/emptyaddress.webp" alt="emptyaddress">
-       <h2>لا توجد عناوين محفوظة</h2>
-       <h3 class="f-s">أضف عنوانا جديدا لرؤية القائمة المحفوظة هنا</h3>
-       <a href="addAddress.html" class="btn_page">إضافة عنوان</a>
-      </div>
-      <div class="addressSave address checkout_content">
-        <h2 class="titleaddress">العناوين المحفوظة
-        </h2>
-        <div class="address">
-          <div class="my_address">
-              <input class="form-check-input" type="checkbox" checked value="" >
-              <p>66 Youssef Ghaly street Miami Alexandria </p>
-              <div class="delet_edit">
-                <button><img src="./images/edit.svg" alt="edit"></button>
-                <button><img src="./images/remove.svg" alt="remove"></button>
-              </div>
-             </div>
-             <a href="addAddress.html" class="add_address">
-              <span>+</span>
-              <h3>إضافة عنوان جديد</h3>
-             </a>
-        </div>
-       
-      </div>
-      
-    </section>
 
+    <section class="account container">
+      <div class="orders emptyorder hide">
+        <img src="./images/emptyOrder.webp" alt="emptyOrder" />
+        <h2>لا توجد طلبات حتى الآن</h2>
+        <h3 class="f-s">
+          استكشف قائمتنا لإضافة بعض العناصر اللذيذة إلى سلة التسوق الخاصة بك
+        </h3>
+      </div>
+      <div class="orders">
+        <h2 class="titleOrder f-m">طلباتي</h2>
+        <div class="btnsOrder">
+          <button class="active">جميع الطلبات</button>
+          <button>الجديد</button>
+          <button>تسليم</button>
+        </div>
+        <div class="allorders">
+          <div style="overflow-x: auto" class="order">
+            <table>
+              <tr>
+                <th>Order No.</th>
+                <th>Date</th>
+                <th>Ship To</th>
+                <th>Order Total</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>1254789</td>
+                <td>3/3/2024</td>
+                <td>سيد علي</td>
+                <td>250 EGP</td>
+                <td class="pending">المعلقه</td>
+              </tr>
+            </table>
+            <div class="btnTable">
+              <a href="viewOrder.html">عرض الطلب</a>
+            </div>
+          </div>
+          <div style="overflow-x: auto" class="order">
+            <table>
+              <tr>
+                <th>Order No.</th>
+                <th>Date</th>
+                <th>Ship To</th>
+                <th>Order Total</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>1254789</td>
+                <td>3/3/2024</td>
+                <td>سيد علي</td>
+                <td>250 EGP</td>
+                <td class="delivered">تسليم</td>
+              </tr>
+            </table>
+            <div class="btnTable">
+              <a href="viewOrder.html">عرض الطلب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="con">
         <div class="parts">
@@ -874,9 +905,6 @@
       </div>
       <p class="rights">الحقوق محفوظة لمنصة سلة © 2023</p>
     </div>
-
-
-   
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>

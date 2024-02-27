@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resturant-Ecommerce</title>
+    <title>Ecommerce</title>
 
-    <meta name="description" content="Resturant-Ecommerce" />
-    <meta name="keywords" content="Resturant-Ecommerce" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <meta name="description" content="Ecommerce" />
+    <meta name="keywords" content="Ecommerce" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
       rel="stylesheet"
@@ -21,8 +15,7 @@
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+ 
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -130,7 +123,7 @@
           aria-labelledby="offcanvasBottomLabel"
         >
           <div class="offcanvas-header">
-            <a href="profile.html" class="user">
+            <div class="user">
               <div class="imgUser notfication">
                 <img src="./images/user.png"  alt="user" />
 
@@ -139,7 +132,7 @@
                 <h3>مرحبآ بك</h3>
                 <h4>محمد عبدالجليل</h4>
               </div>
-            </a>
+            </div>
             <button
               type="button"
               class="btn-close text-reset"
@@ -445,35 +438,74 @@
       </div>
     </nav>
     <section class="account container">
-     
-      <div class="address emptyorder hide">
-       <img src="./images/emptyaddress.webp" alt="emptyaddress">
-       <h2>لا توجد عناوين محفوظة</h2>
-       <h3 class="f-s">أضف عنوانا جديدا لرؤية القائمة المحفوظة هنا</h3>
-       <a href="addAddress.html" class="btn_page">إضافة عنوان</a>
-      </div>
-      <div class="addressSave address checkout_content">
-        <h2 class="titleaddress">العناوين المحفوظة
-        </h2>
-        <div class="address">
-          <div class="my_address">
-              <input class="form-check-input" type="checkbox" checked value="" >
-              <p>66 Youssef Ghaly street Miami Alexandria </p>
-              <div class="delet_edit">
-                <button><img src="./images/edit.svg" alt="edit"></button>
-                <button><img src="./images/remove.svg" alt="remove"></button>
-              </div>
-             </div>
-             <a href="addAddress.html" class="add_address">
-              <span>+</span>
-              <h3>إضافة عنوان جديد</h3>
-             </a>
-        </div>
+   
+      <div class="orders">
+    
        
+        <div class="allorders">
+          <div style="overflow-x:auto;" class="order ">
+            <table>
+              <tr>
+                <th >Order No.</th>
+                <th >Date</th>
+                <th >Ship To</th>
+                <th >Order Total</th>
+                <th >Status</th>
+              </tr>
+              <tr>
+                <td>1254789</td>
+                  <td>3/3/2024</td>
+                  <td>سيد علي</td>
+                  <td>250 EGP</td>
+                  <td class="pending">المعلقه</td>
+                 
+              </tr>
+              
+              
+            </table>
+           
+          </div>
+        </div>
+        <div class="orderSummarySuccsses">
+          <h4 class="f-b">ملخص الطلب <span class="f-s">( رقم الطلب. #125487 )</span></h4>
+          <ul>
+              <li>
+                  <p>Pizza Margherita</p>
+                  <p>x2</p>
+                  <p>210 EGP</p>
+              </li>
+              <li>
+                  <p>Beef Burger Sandwich</p>
+                  <p>x1</p>
+                  <p>210 EGP</p>
+              </li>
+          </ul>
+          <h5 class="f-b">ملخص السعر</h5>
+          <ul>
+              <li>
+                  <p>طريقة الدفع</p>
+                  <p>Cash on delivery</p>
+              </li>
+              <li>
+                  <p>المجموع الفرعي</p>
+                  <p>541 EGP</p>
+              </li>
+              <li>
+                  <p>شحن</p>
+                  <p>50 EGP</p>
+              </li>
+              <li>
+                <p>خصم</p>
+                <p class="green">-100 EGP</p>
+            </li>
+            <li style="margin-top: 16px;">
+              <p class="f-b"style="font-size: 16px;">مجموع</p>
+              <p class="f-b" style="font-size: 16px;">985 EGP</p>
+          </li>
+          </ul>
+         </div>
       </div>
-      
     </section>
-
     <footer>
       <div class="con">
         <div class="parts">
@@ -874,9 +906,6 @@
       </div>
       <p class="rights">الحقوق محفوظة لمنصة سلة © 2023</p>
     </div>
-
-
-   
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>

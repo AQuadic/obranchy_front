@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resturant-Ecommerce</title>
+    <title>Ecommerce</title>
 
     <meta name="description" content="Resturant-Ecommerce" />
     <meta name="keywords" content="Resturant-Ecommerce" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
       rel="stylesheet"
@@ -21,8 +16,6 @@
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -130,16 +123,15 @@
           aria-labelledby="offcanvasBottomLabel"
         >
           <div class="offcanvas-header">
-            <a href="profile.html" class="user">
+            <div class="user">
               <div class="imgUser notfication">
-                <img src="./images/user.png"  alt="user" />
-
+                <img src="./images/user.png" alt="user" />
               </div>
               <div class="infoUser">
                 <h3>مرحبآ بك</h3>
                 <h4>محمد عبدالجليل</h4>
               </div>
-            </a>
+            </div>
             <button
               type="button"
               class="btn-close text-reset"
@@ -434,44 +426,69 @@
               </div>
             </div>
 
-           <div class="country" style="display: none;">
-            <img src="./images/sud.png" alt="">
-            <h3>العربية</h3>
-            <span></span>
-            <p>ج.م</p>
-           </div>
+            <div class="country" style="display: none">
+              <img src="./images/sud.png" alt="" />
+              <h3>العربية</h3>
+              <span></span>
+              <p>ج.م</p>
+            </div>
           </div>
         </div>
       </div>
     </nav>
+
     <section class="account container">
-     
-      <div class="address emptyorder hide">
-       <img src="./images/emptyaddress.webp" alt="emptyaddress">
-       <h2>لا توجد عناوين محفوظة</h2>
-       <h3 class="f-s">أضف عنوانا جديدا لرؤية القائمة المحفوظة هنا</h3>
-       <a href="addAddress.html" class="btn_page">إضافة عنوان</a>
-      </div>
-      <div class="addressSave address checkout_content">
-        <h2 class="titleaddress">العناوين المحفوظة
-        </h2>
-        <div class="address">
-          <div class="my_address">
-              <input class="form-check-input" type="checkbox" checked value="" >
-              <p>66 Youssef Ghaly street Miami Alexandria </p>
-              <div class="delet_edit">
-                <button><img src="./images/edit.svg" alt="edit"></button>
-                <button><img src="./images/remove.svg" alt="remove"></button>
-              </div>
-             </div>
-             <a href="addAddress.html" class="add_address">
-              <span>+</span>
-              <h3>إضافة عنوان جديد</h3>
-             </a>
+      <div class="address">
+        <h2 class="titleaddress">إضافة عنوان</h2>
+
+        <div class="personalDetails checkout_content">
+          <form class="row">
+            
+            <div class="col-12">
+              <input
+                type="number"
+                class="form-control public_input"
+                id="inputBuilding"
+                placeholder="Building Number"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control public_input"
+                id="inputFloor"
+                placeholder="Floor"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="number"
+                class="form-control public_input"
+                id="inputFlat"
+                placeholder="Flat Number"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control public_input"
+                id="inputStreet"
+                placeholder="Street"
+              />
+            </div>
+            <div class="col-md-12">
+              <textarea
+                name=""
+                id=""
+                class="public_input"
+                placeholder="Delivery Notes"
+              ></textarea>
+            </div>
+            <button type="submit" class="next">إضافة</button>
+           
+          </form>
         </div>
-       
       </div>
-      
     </section>
 
     <footer>
@@ -875,10 +892,13 @@
       <p class="rights">الحقوق محفوظة لمنصة سلة © 2023</p>
     </div>
 
-
-   
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+      const logout = () => {
+        document.getElementById("form-submit").submit();
+      };
+    </script>
   </body>
 </html>
