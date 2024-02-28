@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce</title>
 
-    <meta name="description" content="Resturant-Ecommerce" />
-    <meta name="keywords" content="Resturant-Ecommerce" />
+    <meta name="description" content="Ecommerce" />
+    <meta name="keywords" content="Ecommerce" />
 
    
-    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
       crossorigin="anonymous"
     />
- 
+   
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -36,7 +41,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-         <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.html">
             <svg
               width="31"
               height="31"
@@ -125,16 +130,15 @@
           aria-labelledby="offcanvasBottomLabel"
         >
           <div class="offcanvas-header">
-            <div class="user">
+            <a href="profile.html" class="user">
               <div class="imgUser notfication">
-                <img src="./images/user.png"  alt="user" />
-
+                <img src="./images/user.png" alt="user" />
               </div>
               <div class="infoUser">
                 <h3>مرحبآ بك</h3>
                 <h4>محمد عبدالجليل</h4>
               </div>
-            </div>
+            </a>
             <button
               type="button"
               class="btn-close text-reset"
@@ -165,7 +169,7 @@
               </div>
             </div>
             <div class="part">
-               <a href="orders.html" class="acountInfo">
+              <a href="orders.html" class="acountInfo">
                 <svg
                   width="16"
                   height="17"
@@ -218,8 +222,8 @@
                 <h3>تقييم المتجر والمنتجات</h3>
               </a>
             </div>
-             <div class="part">
-               <a href="profile.html" class="acountInfo">
+            <div class="part">
+              <a href="profile.html" class="acountInfo">
                 <svg
                   width="16"
                   height="17"
@@ -238,16 +242,24 @@
             </div>
             <div class="part">
               <a href="addresses.html" class="acountInfo">
-                <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.57385 4.56688L6.57325 4.56627C6.22635 4.21996 5.79453 4.03992 5.30477 4.03992C4.81499 4.03992 4.38323 4.21999 4.03664 4.56658C3.68981 4.91341 3.50934 5.34532 3.50934 5.83535C3.50934 6.32526 3.68973 6.75701 4.03664 7.10348C4.38311 7.45039 4.81486 7.63078 5.30477 7.63078C5.79481 7.63078 6.22671 7.45031 6.57355 7.10348C6.92013 6.7569 7.1002 6.32513 7.1002 5.83535C7.1002 5.34559 6.92016 4.91378 6.57385 4.56688ZM2.02493 2.46238L2.025 2.46231C2.9776 1.58356 4.06399 1.15363 5.30477 1.15363C6.54556 1.15363 7.63194 1.58356 8.58454 2.46231L8.58462 2.46238C9.50885 3.3146 9.9865 4.46334 9.9865 5.96489C9.9865 6.87437 9.64518 7.89481 8.90172 9.03606C8.15882 10.176 7.01976 11.4329 5.46653 12.806C5.44895 12.8199 5.42427 12.8348 5.3883 12.8483C5.35423 12.8611 5.3272 12.865 5.30477 12.865C5.28234 12.865 5.25532 12.8611 5.22125 12.8483C5.18528 12.8348 5.1606 12.8199 5.14301 12.806C3.58978 11.4329 2.45073 10.176 1.70783 9.03606C0.964362 7.89481 0.623047 6.87437 0.623047 5.96489C0.623047 4.46334 1.1007 3.3146 2.02493 2.46238Z" stroke="#666666"/>
-                  </svg>
-                  
+                <svg
+                  width="11"
+                  height="14"
+                  viewBox="0 0 11 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.57385 4.56688L6.57325 4.56627C6.22635 4.21996 5.79453 4.03992 5.30477 4.03992C4.81499 4.03992 4.38323 4.21999 4.03664 4.56658C3.68981 4.91341 3.50934 5.34532 3.50934 5.83535C3.50934 6.32526 3.68973 6.75701 4.03664 7.10348C4.38311 7.45039 4.81486 7.63078 5.30477 7.63078C5.79481 7.63078 6.22671 7.45031 6.57355 7.10348C6.92013 6.7569 7.1002 6.32513 7.1002 5.83535C7.1002 5.34559 6.92016 4.91378 6.57385 4.56688ZM2.02493 2.46238L2.025 2.46231C2.9776 1.58356 4.06399 1.15363 5.30477 1.15363C6.54556 1.15363 7.63194 1.58356 8.58454 2.46231L8.58462 2.46238C9.50885 3.3146 9.9865 4.46334 9.9865 5.96489C9.9865 6.87437 9.64518 7.89481 8.90172 9.03606C8.15882 10.176 7.01976 11.4329 5.46653 12.806C5.44895 12.8199 5.42427 12.8348 5.3883 12.8483C5.35423 12.8611 5.3272 12.865 5.30477 12.865C5.28234 12.865 5.25532 12.8611 5.22125 12.8483C5.18528 12.8348 5.1606 12.8199 5.14301 12.806C3.58978 11.4329 2.45073 10.176 1.70783 9.03606C0.964362 7.89481 0.623047 6.87437 0.623047 5.96489C0.623047 4.46334 1.1007 3.3146 2.02493 2.46238Z"
+                    stroke="#666666"
+                  />
+                </svg>
 
                 <h3>العنوان</h3>
               </a>
             </div>
             <div class="part logOut">
-              <a href="" class="acountInfo">
+              <button href="" class="acountInfo">
                 <svg
                   width="16"
                   height="17"
@@ -262,7 +274,7 @@
                 </svg>
 
                 <h3>تسجيل خروج</h3>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -439,47 +451,46 @@
               </div>
             </div>
 
-           <div class="country" style="display: none;">
-            <img src="./images/sud.png" alt="">
-            <h3>العربية</h3>
-            <span></span>
-            <p>ج.م</p>
-           </div>
+            <div class="country" style="display: none">
+              <img src="./images/sud.png" alt="" />
+              <h3>العربية</h3>
+              <span></span>
+              <p>ج.م</p>
+            </div>
           </div>
         </div>
       </div>
     </nav>
-    <section class="account container">
-     
-      <div class="Profile">
-        <div class="personalDetails checkout_content">
-           <div class="acount_content">
-            <h2 class="cart_title2">البيانات الشخصية</h2>
-            <form class="row ">
-              
-                <div class="col-12">
-               
-                  <input type="text" class="form-control public_input" id="inputname4" placeholder="Frist Name" value="سيد">
-                </div>
-                <div class="col-12">
-                
-                    <input type="text" class="form-control public_input" id="inputname5" placeholder="Last Name" value="علي">
-                </div>
-                <div class="col-12 tel_num" >
-                   <p class="tel_code">+20</p>
-                  <input type="tel" class="form-control public_input" id="inputtel" placeholder="Mobile Number" value="125 555 5489">
-                </div>
-                <div class="col-12">
-               
-                  <input type="email" class="form-control public_input" id="inputemail" placeholder="Email" value="test@gmail.com">
-                </div>
-               
-                <button type="submit" href="" class="next ">حفظ</button>
-              </form>
-           </div>
-              
-        </div>
+    <section class="login loginSigin registration container">
+      <div class="part1">
+        <h2  class="title1">
+         تسجيل الدخول
+        </h2>
+
+        <form action="">
+          <div class="phoneInput">
+            <label for="inputPhone " class="form-label"
+            >رقم الهاتف
+          </label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              value="+201521457896"
+            />
+          </div>
+            
+       
+
+         
+
+          <input type="submit" class="btn_page" value="      تسجيل الدخول" />
+          <a href="signUp.html" class="btn_page2">إنشاء حساب جديد</a>
+        </form>
       </div>
+     
     </section>
     <footer>
       <div class="con">
@@ -881,6 +892,27 @@
       </div>
       <p class="rights">الحقوق محفوظة لمنصة سلة © 2023</p>
     </div>
+
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+         
+         function getIp(callback) {
+    fetch('https://ipinfo.io/41.47.128.120?token=6f23784d8e0441', { headers: { 'Accept': 'application/json' }})
+      .then((resp) => resp.json())
+      .catch(() => {
+        return {
+          country: "eg",
+        };
+      })
+      .then((resp) => callback(resp.country));
+     }
+     const phoneInput = window.intlTelInput(phoneInputField, {
+    initialCountry: "auto",
+    geoIpLookup: getIp,
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+   </script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>

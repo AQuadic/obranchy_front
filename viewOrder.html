@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +15,7 @@
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
       crossorigin="anonymous"
     />
- 
+
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -34,7 +34,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <svg
               width="31"
               height="31"
@@ -125,8 +125,7 @@
           <div class="offcanvas-header">
             <div class="user">
               <div class="imgUser notfication">
-                <img src="./images/user.png"  alt="user" />
-
+                <img src="./images/user.png" alt="user" />
               </div>
               <div class="infoUser">
                 <h3>مرحبآ بك</h3>
@@ -163,7 +162,7 @@
               </div>
             </div>
             <div class="part">
-              <a href="" class="acountInfo">
+              <a href="orders.html" class="acountInfo">
                 <svg
                   width="16"
                   height="17"
@@ -217,7 +216,7 @@
               </a>
             </div>
             <div class="part">
-              <a href="" class="acountInfo">
+              <a href="profile.html" class="acountInfo">
                 <svg
                   width="16"
                   height="17"
@@ -232,6 +231,24 @@
                 </svg>
 
                 <h3>حسابي</h3>
+              </a>
+            </div>
+            <div class="part">
+              <a href="addresses.html" class="acountInfo">
+                <svg
+                  width="14"
+                  height="17"
+                  viewBox="0 0 14 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.44855 2.2966L2.44847 2.29667C1.15932 3.47348 0.5 5.05694 0.5 7.10318C0.5 8.36098 0.976722 9.75683 1.99263 11.3007L2.44855 2.2966ZM2.44855 2.2966C3.76634 1.09314 5.2766 0.5 7 0.5C8.7234 0.5 10.2337 1.09314 11.5515 2.2966L11.5515 2.29666M2.44855 2.2966L11.5515 2.29666M11.5515 2.29666C12.8407 3.47348 13.5 5.05694 13.5 7.10318M11.5515 2.29666L13.5 7.10318M6.82402 16.4663C6.88874 16.4903 6.9466 16.5 7 16.5C7.0534 16.5 7.11126 16.4903 7.17598 16.4663C7.24276 16.4415 7.29369 16.4118 7.33347 16.3798C9.44006 14.5365 10.9919 12.8432 12.0073 11.3007L6.82402 16.4663ZM6.82402 16.4663C6.75724 16.4415 6.70631 16.4118 6.66653 16.3798M6.82402 16.4663L6.66653 16.3798M6.66653 16.3798C4.55994 14.5365 3.00808 12.8432 1.99268 11.3007L6.66653 16.3798ZM13.5 7.10318C13.5 8.36098 13.0233 9.75683 12.0074 11.3007L13.5 7.10318ZM8.58845 5.35091L8.58784 5.35031C8.15147 4.91904 7.61315 4.69745 7 4.69745C6.38683 4.69745 5.84864 4.91906 5.41273 5.35061C4.97626 5.7827 4.75 6.31808 4.75 6.92994C4.75 7.54174 4.97623 8.07692 5.41285 8.50852C5.84862 8.94046 6.38676 9.16242 7 9.16242C7.61342 9.16242 8.15183 8.94034 8.58815 8.5084C9.02421 8.0767 9.25 7.54154 9.25 6.92994C9.25 6.31835 9.02424 5.78307 8.58845 5.35091Z"
+                    stroke="#666666"
+                  />
+                </svg>
+
+                <h3>العنوان</h3>
               </a>
             </div>
             <div class="part logOut">
@@ -427,83 +444,78 @@
               </div>
             </div>
 
-           <div class="country" style="display: none;">
-            <img src="./images/sud.png" alt="">
-            <h3>العربية</h3>
-            <span></span>
-            <p>ج.م</p>
-           </div>
+            <div class="country" style="display: none">
+              <img src="./images/sud.png" alt="" />
+              <h3>العربية</h3>
+              <span></span>
+              <p>ج.م</p>
+            </div>
           </div>
         </div>
       </div>
     </nav>
     <section class="account container">
-   
       <div class="orders">
-    
-       
         <div class="allorders">
-          <div style="overflow-x:auto;" class="order ">
+          <div style="overflow-x: auto" class="order">
             <table>
               <tr>
-                <th >Order No.</th>
-                <th >Date</th>
-                <th >Ship To</th>
-                <th >Order Total</th>
-                <th >Status</th>
+                <th>Order No.</th>
+                <th>Date</th>
+                <th>Ship To</th>
+                <th>Order Total</th>
+                <th>Status</th>
               </tr>
               <tr>
                 <td>1254789</td>
-                  <td>3/3/2024</td>
-                  <td>سيد علي</td>
-                  <td>250 EGP</td>
-                  <td class="pending">المعلقه</td>
-                 
+                <td>3/3/2024</td>
+                <td>سيد علي</td>
+                <td>250 EGP</td>
+                <td class="pending">المعلقه</td>
               </tr>
-              
-              
             </table>
-           
           </div>
         </div>
         <div class="orderSummarySuccsses">
-          <h4 class="f-b">ملخص الطلب <span class="f-s">( رقم الطلب. #125487 )</span></h4>
+          <h4 class="f-b">
+            ملخص الطلب <span class="f-s">( رقم الطلب. #125487 )</span>
+          </h4>
           <ul>
-              <li>
-                  <p>Pizza Margherita</p>
-                  <p>x2</p>
-                  <p>210 EGP</p>
-              </li>
-              <li>
-                  <p>Beef Burger Sandwich</p>
-                  <p>x1</p>
-                  <p>210 EGP</p>
-              </li>
+            <li>
+              <p>Pizza Margherita</p>
+              <p>x2</p>
+              <p>210 EGP</p>
+            </li>
+            <li>
+              <p>Beef Burger Sandwich</p>
+              <p>x1</p>
+              <p>210 EGP</p>
+            </li>
           </ul>
           <h5 class="f-b">ملخص السعر</h5>
           <ul>
-              <li>
-                  <p>طريقة الدفع</p>
-                  <p>Cash on delivery</p>
-              </li>
-              <li>
-                  <p>المجموع الفرعي</p>
-                  <p>541 EGP</p>
-              </li>
-              <li>
-                  <p>شحن</p>
-                  <p>50 EGP</p>
-              </li>
-              <li>
-                <p>خصم</p>
-                <p class="green">-100 EGP</p>
+            <li>
+              <p>طريقة الدفع</p>
+              <p>Cash on delivery</p>
             </li>
-            <li style="margin-top: 16px;">
-              <p class="f-b"style="font-size: 16px;">مجموع</p>
-              <p class="f-b" style="font-size: 16px;">985 EGP</p>
-          </li>
+            <li>
+              <p>المجموع الفرعي</p>
+              <p>541 EGP</p>
+            </li>
+            <li>
+              <p>شحن</p>
+              <p>50 EGP</p>
+            </li>
+            <li>
+              <p>خصم</p>
+              <p class="green">-100 EGP</p>
+            </li>
+            <li style="margin-top: 16px">
+              <p class="f-b" style="font-size: 16px">مجموع</p>
+              <p class="f-b" style="font-size: 16px">985 EGP</p>
+            </li>
           </ul>
-         </div>
+        </div>
       </div>
     </section>
     <footer>
